@@ -27,3 +27,17 @@
             document.body.classList.remove('active');
         }
     }
+    
+        function validateform(){  
+        var name=document.gform.name.value;  
+        var message=document.gform.message.value;  
+        const min=3;
+        
+        if (name==null || name=="" || name.length >= min){  
+          alert("Name can't be blank");  
+          return false;  
+        }else if(message==null || message=="" ){  
+          alert("Please write message");  
+          return false;  
+          }  
+        }  
