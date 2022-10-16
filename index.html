@@ -195,11 +195,12 @@
             <h2>Contact</h2>
             <span>Connect With Us</span>
         </div>
-        <div class="contact-form">
-            <form id="gform" method="post" action="https://script.google.com/macros/s/AKfycbwARZVOhOQwQnxgfQUlqKp59qcoxM0rR55jdFJ6weNa7TnYmFQd3jtf5U_RJyDSFE0_tg/exec">
-              <label for="name">  <input type="text" placeholder="Your Name"></label>
-              <label for="email"> <input type="email" name="" id="" placeholder="Your Email"></label>
-              <label for="message"> <textarea name="" id="" cols="30" rows="10" placeholder="Write Message Here..."></textarea>
+       <div class="contact-form">
+            <form id="gform" method="POST" onsubmit="return validateForm() "  action="https://script.google.com/macros/s/AKfycbwARZVOhOQwQnxgfQUlqKp59qcoxM0rR55jdFJ6weNa7TnYmFQd3jtf5U_RJyDSFE0_tg/exec">
+              <label for="name">  <input type="text" id="name" name="name" placeholder="Your Name" required></label>
+              <span id="name-error"></span>
+              <label for="email"> <input type="email" name="email" id="" placeholder="Your Email" required></label>
+              <label for="message"> <textarea name="messag" id="message"  placeholder="Write Message Here..." required></textarea></label>
                 <input type="submit" value="Send" class="contact-button">
             </form>
         </div>
