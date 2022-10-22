@@ -190,7 +190,7 @@
         </div>
     </section>
     <!-- Contact -->
-    <section class="contact" id="contact">
+<!--     <section class="contact" id="contact">
         <div class="heading">
             <h2>Contact</h2>
             <span>Connect With Us</span>
@@ -204,7 +204,73 @@
                 <input type="submit" value="Send" class="contact-button">
             </form>
         </div>
-    </section>
+    </section> -->
+       </section> -->
+    <section id="contact-form">
+        <div class="container">
+          <div class="col-md-8 col-md-offset-2">
+            <div class="heading">
+              <h2>CONTACT <span>ME</span></h2>
+              <div class="line"></div>
+              <p><span><strong>H</strong></span>ave an exciting project where we can work together? Or just want to say hi, do send me a message and let's chat.</p>
+            </div>
+          </div>
+          <div class="text-center">
+            <div class="col-md-6 col-sm-6 contact-sec-1">
+              <h4>CONTACT IN<span>FO</span></h4>
+              <ul class="contact-form">
+                <li><i class="fa fa-map-marker"></i>
+                  <h6><strong>Address:</strong>Holy Faith Mansion<br>
+                  Thrikkakkara, Kochi </h6>
+                </li>
+                <li><i class="fa fa-envelope"></i>
+                  <h6><strong>Mail Us:</strong> <a href="mailto:fazilkp2000@gmail.com">nithn3119@gmail.com</a></h6>
+                </li>
+                <li><i class="fa fa-phone"></i>
+                  <h6><strong>Phone:</strong> <a href="tel:9946573296">+91 9605286269</a></h6>
+                </li>
+                <li><i class="fa fa-wechat"></i>
+                  <h6><strong>Website:</strong> <a href="#">www.NithinKrishna.com</a> </h6>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-6 col-sm-6">
+              <form  name="contact-form" id="gform" action=""  onsubmit="formvalidate()">
+                <div class="row  wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <input id="name" type="text" name="name" class="form-control" placeholder="Name" required onblur="namecheck()">
+                      <label id="nmlabel" for="name" style="display: none; color:red;">This field is requierd</label>
+                      <label id="nmlabel-01" for="name" style="display: none; color:red;">Name does't start with number</label>
+                      <label id="nmlabel-02" for="name" style="display: none; color:red;">Name does't containe special charecters</label>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <input id="email" type="email" name="email" class="form-control" placeholder="Email Address" required onblur="emailcheck()">
+                      <label id="el" for="name" style="display: none; color:red;">This field is requierd</label>
+                      <label id="el-01" for="name" style="display: none; color:red;">Email does't start with number</label>
+                      <label id="el-02" for="name" style="display: none; color:red;">Email is invalid</label>
+                    </div>
+                  </div>
+                </div>
+                <!-- <div class="form-group"> -->
+                  <!-- <input type="text" name="subject" class="form-control" placeholder="Subject" required> -->
+                <!-- </div> -->
+                <div class="form-group">
+                  <textarea id="msg" name="message" class="form-control" rows="4" placeholder="Enter your message" required onblur="msgcheck()"></textarea>
+                  <label id="ml" for="name" style="display: none; color:red;">This field is requierd</label>
+                  <label id="ml-01" for="name" style="display: none; color:red;">Minimum 50 letters</label>
+                </div>
+                <!-- <button type="submit" class="btn-send col-md-12 col-sm-12 col-xs-12" href="">Send Now</button> -->
+                <input type="submit" value="Send" class="contact-button">
+                <!-- <button type="submit" class="btn-send col-md-12 col-sm-12 col-xs-12">Danger</button> -->
+                
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
     <!-- Footer -->
     <div class="footer">
         <h2>Coding Home</h2>
