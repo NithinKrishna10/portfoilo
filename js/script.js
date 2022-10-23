@@ -27,20 +27,24 @@
             document.body.classList.remove('active');
         }
     }
-    
-        function validateform(){  
-        var name=document.gform.name.value;  
-        var message=document.gform.message.value;  
-        const min=3;
+
+
+  
+
+    // function validateform(){  
+    //     var username=document.getElementById('name');
+    //     var message=document.getElementById('message');
+    //     const min=3;
         
-        if (name==null || name=="" || name.length >= min){  
-          alert("Name can't be blank");  
-          return false;  
-        }else if(message==null || message=="" ){  
-          alert("Please write message");  
-          return false;  
-          }  
-        }  
+    //     if (username =="" || username==Number || message ==""){  
+    //       alert("Name can't be blank");  
+    //       return false;  
+    //     }
+    //       else {
+    //         alert("Send Succsess");
+    //       }
+
+    //     }  
 
     function namecheck()
     {
